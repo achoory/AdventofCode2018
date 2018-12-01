@@ -71,22 +71,5 @@ for res in resFreq:
     if res not in uniqueList:
         print(res)
 
-# does not print because in reality they want us to loop over this resFreq list several times till a duplicate is found..(Q2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# does not print res in first iteration because in reality they want us to loop over this resFreq list several times
+# till a duplicate is found..(contd. Q2)
