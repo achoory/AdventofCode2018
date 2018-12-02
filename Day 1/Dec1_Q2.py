@@ -25,5 +25,3 @@ while True:
             exit(0)
         else:
             unique.append(tempSum)
-
-
