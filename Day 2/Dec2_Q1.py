@@ -9,5 +9,3 @@ for res in results:
       print(res, results[res])
     if (results[res] == 3):
       print(res, results[res])
-
-#print(res, results[res])
