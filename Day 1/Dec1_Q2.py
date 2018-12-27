@@ -11,6 +11,8 @@ obsFromFile.pop()
 results = list(map(int, obsFromFile))
 
 unique = set()
+#starts from 0
+unique.add(0);
 tempSum = 0
 
 
@@ -18,7 +20,7 @@ while True:
 
     for res in results:
 
-        tempSum = tempSum + res
+        tempSum += res
 
         if tempSum in unique:
             print(tempSum)
