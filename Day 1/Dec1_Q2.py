@@ -10,7 +10,7 @@ observations.close()
 obsFromFile.pop()
 results = list(map(int, obsFromFile))
 
-unique = []
+unique = set()
 tempSum = 0
 
 
@@ -24,4 +24,4 @@ while True:
             print(tempSum)
             exit(0)
         else:
-            unique.append(tempSum)
+            unique.add(tempSum)
