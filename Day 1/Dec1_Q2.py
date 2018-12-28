@@ -1,14 +1,10 @@
 path = './Day1_input.txt'
-observations = open(path, 'r')
 
-# read observations from file
-obsFromFile = observations.read()
-obsFromFile = obsFromFile.split('\n')
-observations.close()
-
-# remove last element in list - empty
-obsFromFile.pop()
-results = list(map(int, obsFromFile))
+results = []
+for row in open(path, 'r'):
+    if row != '\n':  # Only if row is not a blank line
+        row.strip()  # Remove any whitespaces from start/end of row
+        results.append(int(row))  # Convert the row to an int and save it
 
 unique = set()
 #starts from 0
@@ -25,5 +21,5 @@ while True:
         if tempSum in unique:
             print(tempSum)
             exit(0)
-        else:
-            unique.add(tempSum)
+
+        unique.add(tempSum)
